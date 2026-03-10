@@ -35,8 +35,8 @@ def main():
     # Dont need :D
     df = df.drop(["thumbnail_url"])
     
-    #df.write_parquet("data/youtube_data.parquet")
-    df.write_csv("data/youtube_data_cleaned.csv")
+    df.write_parquet("data/youtube_data.parquet")
+    # df.write_csv("data/youtube_data_cleaned.csv")
 
 if __name__ == "__main__":
     main()
