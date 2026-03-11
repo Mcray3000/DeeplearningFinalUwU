@@ -21,6 +21,8 @@ def main():
         pl.col('kind').cast(pl.Categorical),
         pl.col('langauge').cast(pl.Categorical),
         pl.col('channel_name').cast(pl.Categorical)
+    ).with_columns(
+        pl.col('publish_date').dt.strftime('%A').cast(pl.Categorical).alias('publish_day')
     )
     
     # Create 'like buckets'
