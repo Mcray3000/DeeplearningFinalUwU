@@ -1,8 +1,5 @@
 # Team Uwu Final
 
-
-
-
 ## Local Setup
 
 We are using [uv](https://github.com/astral-sh/uv) to manage our dependencies and virtual environment
